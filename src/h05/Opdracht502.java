@@ -7,10 +7,18 @@ public class  Opdracht502 extends Applet {
 
     int hoogteValerie;
     int yValerie;
+    int hoogteJeroen;
+    int yJeroen;
+    int hoogteHans;
+    int yHans;
 
     public void init() {
         hoogteValerie = 50;
         yValerie = 300 - hoogteValerie;
+        hoogteJeroen = 150;
+        yJeroen = 300 - hoogteJeroen;
+        hoogteHans = 100;
+        yHans = 300 - hoogteHans;
 
         setSize(400,400);
     }
@@ -25,5 +33,10 @@ public class  Opdracht502 extends Applet {
         g.drawLine(50,100,300,100);
         g.setColor(Color.YELLOW);
         g.fillRect(60,yValerie,50,hoogteValerie);
+        g.setColor(Color.blue);
+        g.fillRect(120,yJeroen,50,hoogteJeroen);
+        g.setColor(Color.red);
+        g.fillRect(180,yHans,50,hoogteHans);
+
     }
 }
